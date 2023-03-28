@@ -1,11 +1,23 @@
 # git2_test
 
-- Specify the path of the specified repository as an argument
+
+## Usage 
+ Specify the path of the specified repository as an argument
+
 - outputs the commit IDs and summaries in topological order.
+```
+cargo run --bin git-commit-topo-sort <path_to_git_repository>
+```
+
+- outputs the commit IDs and summaries in topological order.
+```
+cargo run --bin git-tag-topo-sort <path_to_git_repository>
+```
+
 
 ## How to create this repository
 
-1. `cargo new git2_test --bin`
+1. `cargo new <package_name> --bin`
 
 2. Add git2 crate to Cargo.toml
   ```
@@ -15,4 +27,4 @@
 
 3. Place main.rs in src directory
 
-4. `cargo run <path_to_git_repository>`
+4. `cargo build`

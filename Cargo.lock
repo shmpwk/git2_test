@@ -39,6 +39,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "git-commit-topo-sort"
+version = "0.1.0"
+dependencies = [
+ "git2",
+]
+
+[[package]]
+name = "git-tag-topo-sort"
+version = "0.1.0"
+dependencies = [
+ "git2",
+]
+
+[[package]]
 name = "git2"
 version = "0.13.25"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -51,13 +65,6 @@ dependencies = [
  "openssl-probe",
  "openssl-sys",
  "url",
-]
-
-[[package]]
-name = "git2_test"
-version = "0.1.0"
-dependencies = [
- "git2",
 ]
 
 [[package]]
