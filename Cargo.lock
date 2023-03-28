@@ -46,6 +46,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "git-tag-logger"
+version = "0.1.0"
+dependencies = [
+ "git2",
+]
+
+[[package]]
 name = "git-tag-topo-sort"
 version = "0.1.0"
 dependencies = [

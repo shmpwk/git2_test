@@ -4,12 +4,17 @@
 ## Usage 
  Specify the path of the specified repository as an argument
 
+- outputs all the tag.
+```
+cargo run --bin git-tag-logger <path_to_git_repository>
+```
+
 - outputs the commit IDs and summaries in topological order.
 ```
 cargo run --bin git-commit-topo-sort <path_to_git_repository>
 ```
 
-- outputs the commit IDs and summaries in topological order.
+- outputs the tag IDs and summaries in topological order.
 ```
 cargo run --bin git-tag-topo-sort <path_to_git_repository>
 ```
