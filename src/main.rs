@@ -30,6 +30,11 @@ fn main() {
         std::process::exit(1);
     }
 
+    if let Err(e) = revwalk.push_head() {
+        eprintln!("Error pushing HEAD to revwalk: {}", e);
+        std::process::exit(1);
+    }
+
     for commit_id_result in revwalk {
         match commit_id_result {
             Ok(commit_id) => {

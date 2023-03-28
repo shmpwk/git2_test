@@ -1,18 +1,18 @@
 # git2_test
 
-指定されたリポジトリ内のコミットをトポロジカル順序で表示するテスト。
-指定されたリポジトリのパスを引数として受け取り、コミットIDとサマリーを出力する。
+- Specify the path of the specified repository as an argument
+- outputs the commit IDs and summaries in topological order.
 
 ## How to create this repository
 
 1. `cargo new git2_test --bin`
 
-2. Cargo.tomlにgit2クレートを追加
+2. Add git2 crate to Cargo.toml
   ```
   [dependencies]
   git2 = "0.13"
   ```
 
-3. main.rsをsrcディレクトリに配置
+3. Place main.rs in src directory
 
-4. `cargo run`
+4. `cargo run <path_to_git_repository>`
